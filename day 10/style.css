@@ -1,0 +1,100 @@
+@font-face{
+ font-family: horror;
+ src:Url(./Another\ Danger\ -\ Demo.otf)
+}
+@font-face{
+ font-family: nothing;
+ src:Url(./Ndot-55.otf)
+}
+
+.container{
+ background-color: black;
+ padding: 0;
+ margin: 0;
+display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+
+}
+
+.heading{
+  height:350px ;
+ width: 1100px;
+ margin: 20px;
+ border: 2px solid;
+ display: flex;
+ height: 400px;
+ background: conic-gradient(rgb(104, 70, 104),rgb(72, 46, 90),rgb(37, 71, 37),rgb(104, 104, 53),red,rgb(74, 48, 74));
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+
+
+
+}
+
+.heading h1,p{
+ font-weight: 700;
+ font-size: 40px;
+ color: rgb(184, 165, 165);
+}
+
+.topic{
+ height:350px ;
+ width: 1100px;
+ margin: 20px;
+ border: 2px solid;
+  background:linear-gradient(to right bottom, blue,rgb(98, 27, 27),rgb(54, 109, 54),pink);
+ display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.topic h1{
+
+}
+
+.topic .sub p{
+ height: 60px;
+ width: 800px;
+ background: rgb(95, 111, 119);
+  align-items: center;
+ justify-content: center;
+ display: flex;
+
+}
+
+.skill{
+ height:400px ;
+ width: 1100px;
+ margin: 20px;
+ border: 2px solid;
+ background: radial-gradient(blue,green);
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
+.skill h1{
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
+
+.skill h2{
+  height: 60px;
+ width: 800px;
+ background: radial-gradient(blue,green);
+  align-items: center;
+ justify-content: center;
+ display: flex;
+}
+.footer{
+ height: 100px;
+ width:2310px ;
+ background: linear-gradient(rgb(109, 58, 58),rgb(48, 48, 93),rgb(37, 81, 37));
+  align-items: center;
+ justify-content: center;
+ display: flex;
+}

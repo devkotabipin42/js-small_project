@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  cursor: none;
+  /* padding: 20px; */
+}
+#box{
+ height: 200px;
+ width: 200px;
+ background-color: blueviolet;
+ 
+}
+#box h1{
+ color: antiquewhite;
+}
+
+#main{
+ background-color: rgb(72, 72, 145);
+ height: 200%;
+ width: 100%;
+}
+
+img{
+ height: 70px;
+ width: 70px;
+ position: fixed;
+ transform: translate(-50% ,-50%);
+}

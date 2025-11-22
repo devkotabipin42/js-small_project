@@ -9,68 +9,87 @@
 </head>
 <body>
  <div class="container">
-  <div class="musicPlayer">
-   <nav>
-    <div class="circle">
-     <i class="fa-solid fa-chevron-left"></i>
+  
+   <div class="musicPlayer">
+    <nav class="nav">
+      <div class="nav1">
+     <div id="h1"><h1>B</h1></div>
+     <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+     <div id="like"><i class="fa-regular fa-heart"></i></div>
+     </div>
+     <h2>Hi, Bipin</h2>
+    </nav>
+    
+    <div class="menu">
+      <h3>All</h3>
+      <h3>New Relese</h3>
+      <h3>Tranding</h3>
+      <h3>Top</h3>
+      <h3>Top</h3>
+      <h3>Top</h3>
     </div>
-    <div class="circle">
-     <i class="fa-solid fa-bars"></i>
+    <h2>Curated & trending</h2>
+    <div class="box">
+      <h2 id="box-title">Discover weekly</h2>
+      <p id="box-description"> The orginal slow instrumental <br> best playlist</p>
+      <div class="icon">
+       <img id="box-icon" src=" https://i.pinimg.com/736x/cf/60/8a/cf608ab5deafb9a9753a58fd40d7b12c.jpg
+        " height="20" alt="">
+        <div class="heart1"><i class="fa-regular fa-heart"></i></div>
+        <div class="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+        <div class="download"><i class="fa-solid fa-ellipsis"></i></div>
+        
+        <div class="photo"  > <img id="box-photo" src="https://plus.unsplash.com/premium_photo-1669635062493-cd4806e9b5d6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybCUyMGxpc3RlbmluZyUyMHRvJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" height="180px" alt=""></div>
+      </div>
     </div>
-   </nav>
-   <img src="/thumbnail.png" alt="" class="song-img">
-   <h1>Despacito</h1>
-   <p>luis fon ft. puerto rican</p>
-   <audio  id="song">
-    <source src="/Windy Road Back To You - The Grey Room _ Golden Palms.mp3" type="audio/mpeg"> 
-   </audio>
-   <input type="range" value="0" id="progress">
-   <div class="controls">
-    <div><i class="fa-solid fa-backward"></i></div>
-    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
-    <div><i  class="fa-solid fa-forward"></i></div>
+    <div class="playlst">
+      <h2>Top daily playlists</h2>
+      <p>See all</p>
+    </div>
+    <div class="scrollbar">
+      <div class="music">
+          <img  src="https://media.istockphoto.com/id/1285362966/photo/a-little-african-american-girl-enjoys-her-free-time-at-home.jpg?s=612x612&w=0&k=20&c=DOXyfoBdLrPdLBx1F-9Xj7jR8_yqo18YKytIyPfRE7g=" height="60px" alt="">
+          <h3 class="namesong">Starlit Reverie <br> <span> By Budaiarti . 8 Songs</span> </h3>
+        <div class="play_button" >
+          <i class="fa-solid fa-play" ></i>
+        </div>
+      </div>
+    </div>
+    <div class="bars">
+       <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-music"></i>
+        <i class="fa-solid fa-repeat"></i>
+        <i class="fa-solid fa-bookmark"></i>
+        <i class="fa-solid fa-gear"></i>
+        
+    </div>
+      <div class="play-song">
+        <i class="fa-thin fa-circle-play"></i>
+      </div>
+      <audio  id="song">
+        <source src="Celion_Dion_-_I_Love_You_(mp3.pm).mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress">
+      <div class="controls">
+      </div>
+      <div class="menuBar">
+        
+      </div>
+
+      <div class="liveSong">
+        <i class="fa-solid fa-arrow-left"></i>
+       <div ><i class="fa-solid fa-play" id="play"></i></div>
+       <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="arrows">
+       <div id="upper"> <i class="fa-solid fa-chevron-up" ></i></div>
+      </div>
+      <!-- <div class="slideBar">
+        
+      </div> -->
    </div>
-  </div>
  </div>
- <script>
-  let progress = document.getElementById('progress')
-  let song = document.getElementById('song')
-  let ctrlIcon = document.getElementById('ctrlIcon')
 
-  song.onloadedmetadata = function(){
-   progress.max = song.duration
-   progress.value = song.currentTime
-  }
-
-  function playPause(){
-   if(ctrlIcon.classList.contains('fa-pause')){
-    song.pause()
-    ctrlIcon.classList.remove('fa-pause')
-    ctrlIcon.classList.add('fa-play')
-   }
-   else{
-    song.play()
-    ctrlIcon.classList.add('fa-pause')
-    ctrlIcon.classList.remove('fa-play')
-   }
-  }
-
-   if(song.play()){
-    setInterval(()=>{
-     progress.value = song.currentTime
-    },500)
-   }
-
-   progress.onchange= function(){
-    song.play()
-    song.currentTime = progress.value
-    trlIcon.classList.add('fa-pause')
-    ctrlIcon.classList.remove('fa-play')
-   }
-   
-   
-
- 
- </script>
 </body>
+<script src="script.js"></script>
 </html>
