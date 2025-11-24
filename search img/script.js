@@ -19,7 +19,7 @@ async function searchImage(){
   searchResult.innerHTML=''
  }
  const results = data.results
-
+ 
  results.map((result)=>{
   const image = document.createElement('img')
   image.src = result.urls.small
@@ -30,8 +30,8 @@ async function searchImage(){
   searchResult.appendChild(imageLink)
   console.log(data)
  })
- showMoreBtn.style.display = 'block'
 }
+showMoreBtn.style.display = 'block'
 
 searchEngine.addEventListener('submit',(e)=>{
  e.preventDefault()
