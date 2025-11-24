@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  
+}
+
+main{
+ height: 100%;
+ width: 100%;
+ background-color:white;
+ display: grid;
+ padding: 10px;
+ grid-template-columns: 0.8fr 1fr 1fr 1fr;
+ grid-template-rows: 50px 50px 1fr 1fr 1fr 1fr ;
+ gap: 20px;
+
+
+ grid-template-areas: 'header header header header'
+                      'figure figure figure figure'
+                      'section section section section'
+                      'div1 div2 div3 div4'
+                      'div1 div5 div6 div7'
+                      'div1 div8 div9 div10'
+}
+
+.div-left{
+ background-color: bisque;
+}
+header{
+ background-color: #3197db;
+ grid-area: header;
+ gap: 0;
+ border-radius: 0;
+}
+figure{
+ /* background-color: #376c90; */
+ background: #3f2929;
+ grid-area: figure;
+ gap: 0;
+ border-radius: 10px;
+}
+section{
+ background-color: #1f3d51;
+ grid-area: section;
+ gap: 0px;
+ border-radius: 10px;
+
+}
+.div2{
+ background: #424c40;
+ grid-area: div2;
+ border-radius: 10px;
+
+}
+.div1{
+ background: white;
+ grid-area: div1;
+ border-radius: 10px;
+
+ 
+}
+.div3{
+ background: #3f2929;
+ grid-area: div3;
+ border-radius: 10px;
+
+}
+.div9{
+ background: #3f2929;
+ grid-area: div9;
+ border-radius: 10px;
+
+}
+.div4{
+ background: #7b1880;
+ grid-area: div4;
+ border-radius: 10px;
+
+}
+.div5{
+ background: #0c1314;
+ grid-area: div5;
+ border-radius: 10px;
+
+}
+.div6{
+ background: #95b14f;
+ grid-area: div6;
+ border-radius: 10px;
+
+}
+.div7{
+ background: #66323b;
+ grid-area: div7;
+ border-radius: 10px;
+
+}
+.div8{
+ background: #c99142;
+ grid-area: div8;
+ border-radius: 10px;
+
+}
+.div10{
+ background: #d95a9a;
+ grid-area: div10;
+ border-radius: 10px;
+
+}

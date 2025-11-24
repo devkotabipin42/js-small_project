@@ -227,3 +227,47 @@ footer{
   transform: translate(-50%,-50%) scale(0) rotate(-60deg);
   transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
 }
+
+
+.main .profile{
+  height: 100%;
+width: 100%;
+background-color: aquamarine;
+position: absolute;
+padding: 20px;
+top: 0%;
+z-index: 1;
+border-radius: 20px;
+right: .9px;
+}
+
+.profile .upper1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile .upper1 #wifi1{
+  margin-left: 220px;
+}
+
+.profile .upper1 #wifi1,p,h2{
+  font-size: 20px;
+}
+.upper2{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.upper2 img{
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  background-size: cover;
+  border: 2px solid red;
+}
+
+.upper2 h2{
+  font-weight: 500;
+  font-size: 15px;
+}
