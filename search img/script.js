@@ -1,4 +1,4 @@
-const  accessKey ='x3yskC5jVlktbDpAeemfji2YtS8RFGX5_Fo7JF5ue2E'
+const  accessKey =;
 
 const searchEngine = document.querySelector('.search-engine')
 const searchBox = document.getElementById('search-box')
