@@ -176,6 +176,8 @@ var postContainer = document.getElementById('posts')
 var home = document.getElementById('home')
 var reel = document.querySelector('.reels')
 var imgs = document.querySelector('.imgs')
+var profile = document.querySelector('.profile')
+var pro= document.querySelector('.pro')
 
 var sum = ''
 
@@ -280,15 +282,28 @@ if (dets.target.className =='mute'){
 
 home.addEventListener('click',function(){
   console.log(reel);
-  reel.style.opacity = 0  
+  // reel.style.opacity = 0  
   reel.style.display='none'
+
+
 })
 
 imgs.addEventListener('click',function(){
   console.log('hello')
   reel.style.opacity=1
   reel.style.display='block'
-  postContainer.style.display='block'
+  // postContainer.style.display='block'
+  profile.style.position='relative'
+
+})
+
+pro.addEventListener('click',function(){
+  console.log('hello')
+  reel.style.display='none'
+  postContainer.style.display='none'
+  profile.style.position='absolute'
+
+
 })
 
 // console.log(sum)

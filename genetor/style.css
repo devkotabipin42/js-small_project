@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+  background: black;
+  color: rgb(24, 106, 42);
+ 
+}
+
+html,
+body {
+   height: 100%;
+  width: 100%; 
+  top: 20%;
+  left: 12%;
+  position: absolute;
+  font-size: 29px;
+  overflow-y:hidden;
+  
+
+}
+ 

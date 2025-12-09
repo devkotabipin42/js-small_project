@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+  background: black;
+  /* color: rgb(24, 106, 42); */
+ 
+}
+
+html,
+body {
+   height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* @keyframes changeBG{
+  from {
+    background-color: rgb(175, 151, 151);
+    border-radius: 0;
+    transform:translateX(0px) scale(1) ;
+  }
+  to{background-color: rgb(79, 31, 31);
+    border-radius: 50%;
+    transform:translateY(100px) scale(2)
+  }
+} */
+
+/* color, length, amgle */
+
+@keyframes animateBGColor{
+  from{
+    --bgColor:rgb(226, 53, 53);
+  }
+  to{
+    --bgColor:rgb(65, 65, 230);
+  }
+}
+
+@property --bgColor{
+  syntax: '<color>';
+  initial-value: rgb(31, 134, 144);
+  inherits: false;
+}
+
+
+.box{
+  height: 200px;
+  width: 400px;
+  border: 2px solid whitesmoke;
+  background-color: var(--bgColor);
+  /* animation: changeBG 10s forwards; */
+  animation:animateBGColor 10s forwards;
+}

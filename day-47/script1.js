@@ -76,8 +76,9 @@ postContainer.innerHTML= sum
 
 //<i class="ri-thumb-up-line"><br>${elem.likeCount}</i>
   var allReels = document.querySelector('.reels')
-const API_KEY = 
-channel_Id=
+const API_KEY =' '
+
+channel_Id=' '
 function addData(){
   async function loadChannel(){
   const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoDuration=short&order=date&maxResults=50&q=shorts&key=${API_KEY}

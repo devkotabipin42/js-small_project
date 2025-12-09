@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'helvetica neue';
+    /* font-family: ''; */
     /* color: #fff; */
 }
 html,
@@ -288,38 +288,38 @@ footer{
 
 
 .main .profile{
-  height: 100%;
+  height: 80%;
 width: 100%;
-background-color: aquamarine;
-position: absolute;
-padding: 20px;
-top: 0%;
-z-index: 1;
-border-radius: 20px;
+background-color: rgb(249, 252, 251);
+position: relative;
+padding: 5px;
+top: 5%;
+/* z-index: 1; */
+/* border-radius: 20px; */
 right: .9px;
+display: block;
 }
-
-.profile .upper1{
+.profile .option{
   display: flex;
   justify-content: space-between;
+  margin-top: -6;
+
+}
+.profile .option h1{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.profile .upper1 #wifi1{
-  margin-left: 220px;
-}
-
-.profile .upper1 #wifi1,p,h2{
-  font-size: 20px;
-}
  .upper2{
   display: flex;
-  margin-top: 10px;
   justify-content: space-between;
+ 
 } 
 
 .upper2 img{
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   border-radius: 100%;
   background-size: cover;
   border: 2px solid red;
@@ -327,11 +327,104 @@ right: .9px;
 
 .upper2 h2{
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
+.profile .prName{
+  margin-top: 10px;
+}
+
+.profile .edits{
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.edits button{
+  height: 30px;
+  width: 280px;
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.edits .button1{
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.edits img{
+  height: 20px;
+}
+
+.profile .profile_reels{
+  margin-top: 8px;
+  display: flex;
+
+}
+.profile .profile_reels img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+  border: 2px solid white;
+ 
+}
+
+.profile_reels h1{
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.191);
+  border-radius: 50%;
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+ .pto_profile img{
+  object-fit: cover;
+  height: 90px;
+  width: 120px;
+  margin-left: -3px;
+ }
+
+ .pto_profile{
+  margin-left: -16px;
+  margin-right: -32px;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 1fr 1fr 1fr;
+  justify-content: center;
+  
+
+
+  grid-template-areas:   'grid1 vedio_clip main_profile'
+                        'img img img'
+                        'img img img'
+                        'img img img'
+}
+
+.pto_profile .grid1,.vedio_clip,.main_profile{
+ font-size: 25px;
+ margin-left: 20px;
+ 
+}
+  
+.pto_profile img{
+  object-fit: cover;
+  grid-area: img;
+  padding: 2px;
+} 
 .main .reels{
-height: 570px;
+height: 580px;
 width: 100%;
 padding: 0px;
 top: 6.3%;
@@ -437,6 +530,7 @@ display: block;
   height: 100%;
   position: relative;
   overflow: hidden;
+  
 }
 
 .sub img{
