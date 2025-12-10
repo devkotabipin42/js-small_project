@@ -366,3 +366,231 @@ connectDatabase(function(){
     })
   })
 })
+
+/* Scenario:
+
+Connect to server
+
+Authenticate
+
+Fetch messages
+
+Display chat window */
+
+function connectServer(cb){
+  setTimeout(() => {
+    console.log('server connect')
+    cb()
+  }, 1000);
+}
+
+function authenticate(cb){
+  setTimeout(() => {
+    console.log('user authenticated')
+    cb({userId:50})
+  }, 1000);
+}
+
+function  fetchMessage(user, cb){
+  setTimeout(() => {
+    console.log('messagefetched for user: ',user.userId)
+    cb(['hi','hello','how are you'])
+  }, 1000);
+}
+function displayChat(message,cb){
+  setTimeout(() => {
+    console.log('chat window opwned: ',message)
+  }, 1000);
+}
+
+connectServer(()=>{
+  authenticate((user)=>{
+    fetchMessage(user,(msg)=>{
+      displayChat(msg,()=>{
+        console.log('Messaging app raady')
+      })
+    })
+  })
+})
+
+/* Scenario:
+
+Connect to server
+
+Login user
+
+Fetch friends
+
+Fetch notifications
+
+Load homepage*/
+
+function connect(cb){
+  setTimeout(() => {
+    console.log('connect to server');
+    cb()
+  }, 2000);
+}
+
+function loginUser(cb){
+  setTimeout(() => {
+    console.log('login sucessful')
+    cb({id:'123',name:'bipin'})
+  }, 2000);
+}
+
+function fetchFriend(user,cb){
+  setTimeout(() => {
+    console.log('Friends fetched for:', user.name)
+    cb(["Ram", "Sita", "Hari"]);
+  }, 2000);
+}
+
+function fetchNotification(cb){
+  setTimeout(() => {
+    console.log('notification fetched')
+    cb(['comment','like','follow'])
+  }, 2000);
+}
+
+function loadHomepage(friend,notification,cb){
+  setTimeout(() => {
+    console.log("Homepage loaded with:", friend, notification);
+    cb()
+  }, 2000);
+}
+
+connect(()=>{
+  loginUser((user)=>{
+    fetchFriend(user,(friend)=>{
+      fetchNotification((notification)=>{
+        loadHomepage(friend,notification,()=>{
+          console.log('social media fully loaded')
+        })
+      })
+    })
+  })
+})
+
+function step1(cb){
+  console.log('step 1 done')
+  cb()
+}
+step1(function(){
+  console.log('step 2 done')
+})
+
+/* boil water
+add tea
+add sugar
+serve tea
+*/
+
+function boilWater(cb){
+setTimeout(() => {
+  console.log('boiled water')
+  cb()
+}, 2000);
+}
+
+function addTea(cb){
+  setTimeout(() => {
+    console.log('added tea')
+    cb()
+  }, 2000);
+}
+
+function addSugar(cb){
+  setTimeout(() => {
+    console.log(('added sugar'))
+    cb()
+  }, 2000);
+}
+
+function serveTea(cb){
+  setTimeout(() => {
+    console.log('serve tea')
+    cb()
+  }, 2000);
+}
+
+boilWater(()=>{
+  addTea(()=>{
+    addSugar(()=>{
+      serveTea(()=>{
+        console.log('Tea ready')
+      })
+    })
+  })
+})
+
+
+/*Connect to Server
+
+Authenticate User
+
+Fetch User Settings
+
+Load Dashboard
+
+Show Notification */
+
+function connectToServer(){
+  console.log('connecting to server')
+  setTimeout(() => {
+    console.log('server connect')
+    cb()
+  }, 1000);
+}
+
+function authenticateUser(cb){
+  console.log('Authenticating user..')
+  setTimeout(() => {
+    console.log('User authenticates')
+    cb({userId: 77,name:'bipin'})
+  }, 1000);
+}
+
+
+
+
+/*
+Create:
+login(callback)
+fetchProfile(callback)
+showProfile(callback)
+Flow:
+Login success
+Fetching profile...
+Profile loaded
+Then final message:
+Everything ready! */
+
+function login(cb){
+setTimeout(() => {
+  console.log('login sucess')
+  cb({userid:'bipin1234'})
+}, 2000);
+}
+
+function fetchProfile(user,cb){
+  setTimeout(() => {
+    console.log('fetching profile',user.userId);
+    cb({name:'bipin',age:23})
+  }, 2000);
+}
+
+function profileLoaded(profile,cb){
+  console.log('name:',profile.name)
+  console.log('Age:',profile.age)
+
+  cb()
+}
+
+login((user)=>{
+  fetchProfile(user,(profile)=>{
+    profileLoaded(profile,()=>{
+      console.log('everingThimg redy')
+    })
+  })
+})
