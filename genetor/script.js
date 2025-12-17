@@ -15,7 +15,7 @@ function randomText(){
   setTimeout(()=>{
   iteration+=0.50
    
-  },5000)
+  },1000)
 
 }
 setInterval(randomText,50)

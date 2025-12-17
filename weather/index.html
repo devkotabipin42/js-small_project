@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <main>
+    <div class="star"></div>
+     <video class="bg-video" muted loop playsinline>
+    <source src="./1535674-hd_1920_1080_24fps.mp4" type="video/mp4">
+    </video>
+    <div class="weatherwise">
+      <div class="svg">
+        <div class="string">
+          <svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 10 80 Q 95 78 180 80" stroke="rgb(200, 200, 190)" fill="transparent" />
+          </svg>
+          <h2>WeatherWise</h2>   
+        </div>
+      </div>
+      <h3>Status</h3>
+      <div class="status">
+        <div class="per">
+          <h3><i class="ri-arrow-up-line">23.8%</i></h3>
+          <h4></h4>
+        </div>
+        <canvas id="statusCanvas" width="200" height="200"></canvas>
+
+      </div>
+      <div class="hh"><h2>See Moredetail ></h2></div>
+      <div class="area">
+        <h3>Select area</h3>
+        <h3><i class="ri-send-plane-fill"></i></h3>
+        <p><i class="ri-circle-line"></i></p>
+        <p><i class="ri-circle-line"></i></p>
+      </div>
+      <div class="globle">
+        
+      </div>
+      <div class="last"><h2>Brooklyn,New York,USA</h2></div>
+    </div>
+   <div class="function">
+      <div class="div1">
+        <p class="names">Brooklyn,New York,Usa</p>
+      </div>        
+      <div class="div2">
+          <input type="text" placeholder="Search city..." id="search-input">
+          <button id="buttonId"><i class="ri-search-line"></i></button>
+          <div class="download">
+            Download App
+          </div>
+        
+      </div>        
+      <div class="div3">
+        <h1>18°C</h1>
+        <div class="degree">
+          <div class="h">
+           <p> H  29°C</p>
+          </div>
+          <div class="l">
+           <p>L  12°C</p> 
+          </div>
+        </div>
+      </div>        
+      <div class="div4">
+        <p>With real time data and advanced technology, we provide reliable forecasts for any location around the world.</p>
+      </div>        
+      <div class="div5">
+        <h1>Stormy <br>with partly cloudy</h1>
+      </div>        
+      <div class="div6">
+        <div class="part1">
+          <p>Recently Searched</p>
+          <p>See All ></p>
+        </div>
+        <div class="part2">
+          <div class="place1">
+            <div class="result">
+              <i class="ri-cloud-line"></i>
+              <p>16°C</p>
+            </div>
+            <p>LiverPool,UK <br>Partly Cloudy</p>
+          </div>
+          <div class="place2">
+            <div class="result1"><i class="ri-rainy-line"></i>
+              <p>-2°C</p>
+            </div>
+            <p>Palermo,Italy <br>RainThunder</p>
+          </div>
+        </div>
+      </div>  
+      <div class="div7">
+        <canvas class="my-chart"></canvas>
+      </div>  
+  </div>       
+  </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</html>
